@@ -44,7 +44,7 @@ class UserController extends AbstractController
 
             $entityManagerInterface->flush();
 
-            return $this->redirectToRoute("product_list");
+            return $this->redirectToRoute("writer_list");
         }
 
         return $this->render("front/userform.html.twig", ['userForm' => $userForm->createView()]);
